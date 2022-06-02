@@ -1,0 +1,56 @@
+POST http://localhost:9000/users/add
+Content-Type: application/json
+
+{
+  "username": "user_15"
+}
+
+<> 2020-04-28T115447.200.json
+
+###
+POST http://localhost:9000/chats/add
+Content-Type: application/json
+
+{
+  "name": "chat_6",
+  "users": [
+    "2",
+    "3",
+    "5"
+  ]
+}
+
+<> 2020-04-28T115455.200.json
+
+###
+POST http://localhost:9000/messages/add
+Content-Type: application/json
+
+{
+  "chat": 14,
+  "author": 2,
+  "text": "Hello"
+}
+
+###
+POST http://localhost:9000/chats/get
+Content-Type: application/json
+
+{
+  "id": "1"
+}
+
+###
+POST http://localhost:9000/messages/get
+Content-Type: application/json
+
+{
+  "id": "13"
+}
+
+<> 2020-04-29T121616.200.json
+<> 2020-04-29T121614.200.json
+<> 2020-04-29T121600.200.json
+<> 2020-04-29T121442.200.json
+
+###
